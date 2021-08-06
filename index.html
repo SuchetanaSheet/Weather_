@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Weather App</title>
+
+<head>
+    <link rel="stylesheet" href="css\style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Weather</a>
+        <a href="#">Maps</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <div class="text">
+        <form id="search-form">
+            <input type="search" placeholder="Enter city name" id="search-input" required />
+            <br>
+
+            </br>
+            <button id="search-button">Search</button>
+        </form>
+        <main id="app=container">
+            <div id="location">
+                <p>-----</p>
+            </div>
+            <div id="temp">
+                <img id="temp-icon" src="assets\sun.jpg" alt=" ">
+                <p>
+                    <scan id="temp-value">-------</scan><span id="temp-unit">&#176c</span>
+                </p>
+            </div>
+            <div id="climate">
+                <p>----</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="js\script.js">
+    </script>
+    <script type='text/javascript' src='config.js'></script>
+</body>
+
+</html>
